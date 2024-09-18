@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ResetPasswordRepository extends MongoRepository<ResetPassword, String> {
+    Boolean existsByCode(Integer code);
 }
